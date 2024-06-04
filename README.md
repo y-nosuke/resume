@@ -6,7 +6,7 @@
   - [1.3. システム開発に対する考え方](#13-システム開発に対する考え方)
   - [1.4. スキル](#14-スキル)
     - [1.4.1. 言語](#141-言語)
-    - [1.4.2. フレームワーク](#142-フレームワーク)
+    - [1.4.2. フレームワーク・ライブラリ](#142-フレームワークライブラリ)
     - [1.4.3. RDB/NoSQL](#143-rdbnosql)
     - [1.4.4. OS](#144-os)
     - [1.4.5. クラウド](#145-クラウド)
@@ -15,9 +15,9 @@
   - [1.5. 職務経歴](#15-職務経歴)
     - [1.5.1. フリーランス（2022年11月～現在）](#151-フリーランス2022年11月現在)
       - [1.5.1.1. 証券システム口座統合プロジェクト（2022年11月～現在）](#1511-証券システム口座統合プロジェクト2022年11月現在)
-        - [1.5.1.1.1. 担当業務1: AWS上にCD環境の構築、及びIaCの実現](#15111-担当業務1-aws上にcd環境の構築及びiacの実現)
-        - [1.5.1.1.2. 担当業務2: Go開発環境の改善](#15112-担当業務2-go開発環境の改善)
-        - [1.5.1.1.3. 担当業務3: 口座システム統合のための要件定義](#15113-担当業務3-口座システム統合のための要件定義)
+        - [1.5.1.1.1. 担当業務1: AWS上にCD環境の構築、及びIaCの実現（2022年11月～現在）](#15111-担当業務1-aws上にcd環境の構築及びiacの実現2022年11月現在)
+        - [1.5.1.1.2. 担当業務2: Go開発環境の改善（2023年04月～現在）](#15112-担当業務2-go開発環境の改善2023年04月現在)
+        - [1.5.1.1.3. 担当業務3: 口座システム統合のための要件定義及び設計・実装（2023年07月～現在）](#15113-担当業務3-口座システム統合のための要件定義及び設計実装2023年07月現在)
     - [1.5.2. 株式会社豆蔵（2019年10月～2022年11月）](#152-株式会社豆蔵2019年10月2022年11月)
       - [1.5.2.1. 書類保管システム構築の要件定義（2022年08月～2022年11月/2ヶ月）](#1521-書類保管システム構築の要件定義2022年08月2022年11月2ヶ月)
         - [1.5.2.1.1. 担当業務: 要件定義](#15211-担当業務-要件定義)
@@ -28,7 +28,7 @@
       - [1.5.2.4. 通信事業者様開発プロセス改善支援（2021年08月～2022年03月/8ヶ月）](#1524-通信事業者様開発プロセス改善支援2021年08月2022年03月8ヶ月)
         - [1.5.2.4.1. 担当業務: 開発プロセスの改善](#15241-担当業務-開発プロセスの改善)
       - [1.5.2.5. カード発行代行業務基幹システムリプレース（2020年04月～2021年07月/1年4ヶ月）](#1525-カード発行代行業務基幹システムリプレース2020年04月2021年07月1年4ヶ月)
-        - [1.5.2.5.1. 担当業務1: 要件定義～運用開始](#15251-担当業務1-要件定義運用開始)
+        - [1.5.2.5.1. 担当業務1: 要件定義～運用](#15251-担当業務1-要件定義運用)
       - [1.5.2.6. 通信事業者様基幹システム インフラ構築（2019年10月～2020年03月/6ヶ月）](#1526-通信事業者様基幹システム-インフラ構築2019年10月2020年03月6ヶ月)
         - [1.5.2.6.1. 担当業務: 実装フェーズ以降に参加。担当はインフラの移行・構築](#15261-担当業務-実装フェーズ以降に参加担当はインフラの移行構築)
     - [1.5.3. 株式会社カカクコム（2019年1月～2019年7月）](#153-株式会社カカクコム2019年1月2019年7月)
@@ -72,30 +72,84 @@
 
 ### 1.4.1. 言語
 
-Java | Kotlin | Go | C | JavaScript | TypeScript | Ruby
-JUnit | DBUnit | CUnit
+- Java, Kotlin, Go, C, JavaScript, TypeScript, Ruby
+- Gradle, Makefile
 
-### 1.4.2. フレームワーク
+### 1.4.2. フレームワーク・ライブラリ
 
-SpringBoot | Spring Framework | Echo(Go) | Ruby on Rails | jQuery | Vue.js | Nuxt.js
+- SpringBoot, Spring Framework, Echo(Go), Ruby on Rails
+- jQuery, Vue.js, Nuxt.js, Express
+- JUnit, DBUnit, CUnit
 
 ### 1.4.3. RDB/NoSQL
 
-MySQL | PostgreSQL | Oracle | Redis
+- MySQL, PostgreSQL, Oracle, Redis
+- phpMyAdmin, phpPgAdmin, flyway, SchemaSpy
 
 ### 1.4.4. OS
 
-Linux(CentOS, Fedora, Amazon Linux, Ubuntu) | Windows
+- Linux(CentOS, Fedora, Amazon Linux, Ubuntu), Windows
 
 ### 1.4.5. クラウド
 
 - AWS
-VPC | S3 | CloudFront | API Gateway | Lambda | ELB | EC2 | ECS | Fargate | Route53 | IAM | Cognito | RDS(MySQL|PostgreSQL) | Aurora | ElastiCache(Redis) | Kinesis | Kinesis firehose | SQS | SNS | SES | CloudWatch | EventBridge | Step Functions | CloudTrail | GuardDuty | KMS | Parameter Store
+  - コンピューティング
+    - EC2, Lambda
+  - コンテナ
+    - Elastic Container Registry, Elastic Container Service（Fargate）
+  - ストレージ
+    - S3, EFS
+  - データベース
+    - RDS(MySQL|PostgreSQL/Aurora), ElastiCache(Redis)
+  - 移行と転送
+    - AWS Transfer Family
+  - ネットワーキングとコンテンツ配信
+    - VPC, CloudFront, Route 53, API Gateway
+  - 開発者用ツール
+    - CodeCommit, CodeBuild, CodeDeploy, CodePipeline, X-Ray
+  - 管理とガバナンス
+    - CloudWatch, Systems Manager, CloudTrail
+  - 分析
+    - Athena, Kinesis(Kinesis firehose)
+  - セキュリティ、ID、およびコンプライアンス
+    - Cognito, Secrets Manager, GuardDuty, Certificate Manager, Key Management Service, WAF & Shield, Detective, IAM
+  - クラウド財務管理
+    - Billing and Cost Management
+  - アプリケーション統合
+    - Step Functions, Simple Notification Service, Simple Queue Service, Amazon EventBridge
+  - ビジネスアプリケーション
+    - Amazon Simple Email Service
 
 ### 1.4.6. その他
 
-GitHub | GitHub Actions | GitLab | Jenkins | Concourse CI
-Terraform | Ansible | Docker | Docker Compose | nginx | Apache | Tomcat| Zabbix | Elasticsearch | Kibana | RabbitMQ | LDAP | BIND | DHCP | Samba（AD）
+- プロジェクト管理
+  - Redmine
+- コード管理
+  - GitHub, GitHub Actions, GitLab, GitLab REST API, Gitbucket, githook
+- 品質管理
+  - SonarQube
+- アーティファクト管理
+  - Nexus
+- CI/CD
+  - Jenkins(Jenkinsfile), Concourse CI
+- IaC
+  - Terraform, Ansible
+- コンテナ
+  - Docker, Docker Compose, Harbor
+- 監視
+  - Elasticsearch, Kibana, Prometheus, Grafana, Jaeger, Zabbix
+  - OpenTelemetry
+- 認証
+  - Keycloak, passport
+  - OpenID Connect, OAuth
+- ドキュメント
+  - Swagger, Redoc, MkDocs
+  - OpenAPI
+- IDE
+  - IntelliJ IDEA, Eclipse, GoLand, VSCode
+- その他
+  - nginx, Apache, Tomcat, RabbitMQ, LDAP, BIND, DHCP, Samba（AD）
+
 
 ### 1.4.7. 資格
 
@@ -109,7 +163,18 @@ Terraform | Ansible | Docker | Docker Compose | nginx | Apache | Tomcat| Zabbix 
 
 #### 1.5.1.1. 証券システム口座統合プロジェクト（2022年11月～現在）
 
-##### 1.5.1.1.1. 担当業務1: AWS上にCD環境の構築、及びIaCの実現
+##### 1.5.1.1.1. 担当業務1: AWS上にCD環境の構築、及びIaCの実現（2022年11月～現在）
+
+- 役割: メンバー
+- プロジェクト規模: 要員10名
+- フェーズ: 総合テスト、運用
+- 技術:
+  - OS: Mac, Linux
+  - 言語: TypeScript（Node.js）, Bash
+  - その他:
+    - AWS: EC2, Lambda, ECR, ECS(Fargate), S3, RDS(MySQL/Aurora), ElastiCache(Redis), VPC, CloudFront, Route 53, API Gateway,  
+           CloudWatch, Systems Manager, Secrets Manager, Step Functions, SQS, EventBridge
+    - Terraform, Github, Jenkins(Jenkinsfile)
 
 - リリースごとにアプリケーションのバージョン、試験データが違うため、リリースごとに試験環境を分けたいという要望がありました。
 - また、開発フローが整備されていなかったため、最新のブランチが把握しづらい状況でした。そのため、意図しない修正が本番環境に適用されてしまうという問題がありました。
@@ -120,7 +185,17 @@ Terraform | Ansible | Docker | Docker Compose | nginx | Apache | Tomcat| Zabbix 
 - また、各リポジトリJenkinsfileが利用されていましたが、Jenkins Shared Libraryを使って各レポジトリのJenkinsfileを共通化し、管理コストを削減するようにしました。
 - Step FunctionやJenkins Shared Libraryは初めて扱いましたが、公式を調べるなどして適宜キャッチアップしました。
 
-##### 1.5.1.1.2. 担当業務2: Go開発環境の改善
+##### 1.5.1.1.2. 担当業務2: Go開発環境の改善（2023年04月～現在）
+
+- 役割: メンバー
+- プロジェクト規模: 要員10名
+- フェーズ: 総合テスト、運用
+- 技術:
+  - OS: Mac, Linux
+  - 言語: Go
+  - フレームワーク: Echo
+  - DB: MySQL
+  - その他: Docker, Docker Compose, Makefile, Swagger, SchemaSpy, Redoc, MkDocs
 
 - Go（Echoを使ったAPIサーバー）の開発環境の改善を行いました
 - 新規開発者に開発環境を構築するに当たり、必要な準備作業がわかりづらく、構築に時間がかかる状況でした。
@@ -128,7 +203,13 @@ Terraform | Ansible | Docker | Docker Compose | nginx | Apache | Tomcat| Zabbix 
 - 既存の開発ツールを調査したうえで、makeコマンド一つでDBマイグレーションやビルド、テストの実行などが実行できる状態にしました。
 - markdownのlinterの導入や拡張機能のインストールなど、VSCodeの標準機能を使って誰でも同じ設定、同じ拡張機能を利用できる状態にしました。
 
-##### 1.5.1.1.3. 担当業務3: 口座システム統合のための要件定義
+##### 1.5.1.1.3. 担当業務3: 口座システム統合のための要件定義及び設計・実装（2023年07月～現在）
+
+- 役割: 技術リーダー
+- プロジェクト規模: 要員10名
+- フェーズ: 要件定義、基本設計、詳細設計、実装、単体テスト
+- 手法: ドメイン駆動設計, イベントストーミング
+- 技術: 担当業務2と同じ
 
 - 新たな口座システムの統合のため、イベントストーミングを利用して要件定義を行いました。
 - 集約、コンテキストを決めたうえで開発を進めました。
@@ -141,6 +222,12 @@ Terraform | Ansible | Docker | Docker Compose | nginx | Apache | Tomcat| Zabbix 
 
 ##### 1.5.2.1.1. 担当業務: 要件定義
 
+- 役割: メンバー
+- プロジェクト規模: 要員4名
+- フェーズ: 要件定義
+- 技術:
+  - Auth0
+
 - 以下２つの要件定義を行いました。
   - 認証基盤統合導入
   - 全文検索システム導入
@@ -149,12 +236,24 @@ Terraform | Ansible | Docker | Docker Compose | nginx | Apache | Tomcat| Zabbix 
 
 ##### 1.5.2.2.1. 担当業務: 開発環境構築
 
+- 役割: メンバー
+- プロジェクト規模: 要員4名
+- フェーズ: 要件定義
+- 技術:
+  - AWS: CodeCommit, CodeBuild, CodeDeploy, CodePipeline
+  - Terraform
+
 - Codeシリーズを使用したCI/CDパイプラインの設計を担当しました。
 - 一緒に働いていた後輩社員の育成のため、実装を指導しました。
 
 #### 1.5.2.3. 大手SIer様新入社員教育（2022年04月～2022年06月/3ヶ月）
 
 ##### 1.5.2.3.1. 担当業務: 新入社員教育のサブ講師
+
+- 役割: サブ講師
+- プロジェクト規模: 要員10名
+- 技術:
+  - Java, Servlet, オブジェクト指向
 
 - 新入社員の中で成績優秀者、経験者を集めた組のサブ講師を担当しました。
 - Java（オブジェクト指向）、Webシステムに関する教育を行いました。
@@ -166,13 +265,49 @@ Terraform | Ansible | Docker | Docker Compose | nginx | Apache | Tomcat| Zabbix 
 
 ##### 1.5.2.4.1. 担当業務: 開発プロセスの改善
 
+- 役割: メンバー
+- プロジェクト規模: 要員3名
+- フェーズ: 運用
+- 技術:
+  - GitLab, GitLab REST API, githook
+
 - 不具合発生が多く、開発に支障が出ている開発プロセスの改善支援を実施しました。
 - GitLab Issueを使用したインシデント管理、リリース管理などのプロセスの構築を行いました。
-- GitLab APIを使用したissue発行の自動化を行いました。
+- GitLab REST APIを使用したissue発行の自動化を行いました。
 
 #### 1.5.2.5. カード発行代行業務基幹システムリプレース（2020年04月～2021年07月/1年4ヶ月）
 
-##### 1.5.2.5.1. 担当業務1: 要件定義～運用開始
+##### 1.5.2.5.1. 担当業務1: 要件定義～運用
+
+- 役割: 技術リーダー
+- プロジェクト規模: 要員15名
+- フェーズ: 要件定義、基本設計、詳細設計、実装、単体テスト、総合テスト、運用
+- 技術:
+  - OS: Mac, Linux
+  - 言語: Java, TypeScript, Bash
+  - フレームワーク: SpringBoot, Spring Framework, Vue.js, Nuxt.js, Express
+  - DB: PostgreSQL
+  - その他:
+    - AWS: EC2, ECR, ECS(Fargate), S3, EFS, RDS(MySQL|PostgreSQL/Aurora), ElastiCache(Redis),  
+           AWS Transfer Family, VPC, CloudFront, Route 53, API Gateway, X-Ray, CloudWatch, Systems Manager, CloudTrail, Athena, Kinesis(Kinesis firehose),  
+           Cognito, Secrets Manager, GuardDuty, Certificate Manager, KMS, WAF & Shield, Detective, IAM,  
+           Billing and Cost Management, SNS, SQS, Amazon EventBridge, SES
+    - コード管理
+      - GitLab, GitLab REST API, githook
+    - 品質管理
+      - SonarQube
+    - CI/CD
+      - Jenkins(Jenkinsfile), Concourse CI
+    - IaC
+      - Terraform, Ansible
+    - コンテナ
+      - Docker, Docker Compose, Harbor
+    - 認証
+      - Keycloak, passport
+      - OpenID Connect, OAuth
+    - ドキュメント
+      - Swagger, Redoc, MkDocs
+      - OpenAPI
 
 - AWS上への開発環境、ステージング環境、本番環境のインフラ構築を行いました。
 - AWSは初めてでしたが、公式ドキュメントや技術記事を参照することで一人でキャッチアップを行いました。
@@ -199,6 +334,11 @@ Terraform | Ansible | Docker | Docker Compose | nginx | Apache | Tomcat| Zabbix 
 
 ##### 1.5.2.6.1. 担当業務: 実装フェーズ以降に参加。担当はインフラの移行・構築
 
+- 役割: メンバー
+- プロジェクト規模: 要員3名
+- フェーズ: 運用
+- 技術: Azure, Bosh、Kubernetes, Concourse CI, terraform
+
 - 通信事業者様の新規サービス立ち上げに伴う、基幹システムの新規構築を行いました。
 - Concourse CIを使用したCI/CDパイプラインの再構築を行いました。
 - Azure上への開発環境、ステージング環境のインフラ構築を行いました。
@@ -211,15 +351,23 @@ Terraform | Ansible | Docker | Docker Compose | nginx | Apache | Tomcat| Zabbix 
 
 ##### 1.5.3.1.1. 担当業務: 詳細設計、実装
 
+- 役割: メンバー
+- プロジェクト規模: 要員8名
+- フェーズ: 詳細設計、実装、単体テスト、運用（定期リリース）
+
 - Ruby on Railsを使ったAPI開発を行いました。
 - 設計方針、テスト方針が確立できていませんでした。そのため、作業進捗、品質に個人差が出てしまっていると感じていました。
-- 方針の標準化を行い、チームに貢献した。
+- 方針の標準化を行い、チームに貢献しました。
 
 ### 1.5.4. NECソリューションイノベータ株式会社（旧NECシステムテクノロジー）（2008年4月～2018年12月）
 
 #### 1.5.4.1. 無人航空機管制システムの研究（2016年4月～2018年12月/2年8ヶ月）
 
 ##### 1.5.4.1.1. 担当業務: 仕様検討、大手企業社との仕様調整
+
+- 役割: 技術リーダー（全体プロジェクトの中ではメンバー）
+- プロジェクト規模: 要員4名
+- フェーズ: 要件定義、基本設計、詳細設計、実装、単体テスト、総合テスト
 
 - 2020年の実証実験を成功させるため、無人航空機管制の仕様検討～プロトタイプ開発を実施しました。
 - 自社開発チームの進捗管理、及び開発環境構築、設計・製造を担当しました。
@@ -228,6 +376,10 @@ Terraform | Ansible | Docker | Docker Compose | nginx | Apache | Tomcat| Zabbix 
 #### 1.5.4.2. 次期航空管制システム開発プロジェクト（2011年4月～2016年3月/5年）
 
 ##### 1.5.4.2.1. 担当業務: 詳細設計～運用支援
+
+- 役割: メンバー、リーダー（進捗管理、品質管理、技術含む）
+- プロジェクト規模: 要員最大19名（リーダー時は5名）
+- フェーズ: 詳細設計、実装、単体テスト、結合テスト、総合テスト、お客様評価、システム移行、運用
 
 - 航空機の運航に必要な飛行計画、ノータム、気象情報、捜索救難に関する情報等を管理・処理する航空管制システムを、オープン系の次期システムにリプレースするプロジェクトに参画しました。
 - 当初は開発メンバとして携わっており、詳細設計、実装、単体テスト、結合テスト、システムテストを行いました。
@@ -239,6 +391,10 @@ Terraform | Ansible | Docker | Docker Compose | nginx | Apache | Tomcat| Zabbix 
 
 ##### 1.5.4.3.1. 担当業務: 運用支援、及びシステム開発（基本設計～リリース）
 
+- 役割: メンバー
+- プロジェクト規模: 要員20名
+- フェーズ: 基本設計、詳細設計、実装、単体テスト、結合テスト、運用（定期リリース）
+
 - 国民健康保険団体連合会様・介護保険システムの運用支援、及び、自社カスタマイズシステムの改修を行いました。
 - 介護保険システムの運用支援を行い、業務知識を得つつ、自社のカスタマイズシステムの開発を同時に行いました。
 - 2本のプログラムの開発を一人で担当し、設計から製造、テスト、リリースまで行いました。
@@ -246,6 +402,10 @@ Terraform | Ansible | Docker | Docker Compose | nginx | Apache | Tomcat| Zabbix 
 #### 1.5.4.4. 生命保険会社様向け システム運用保守プロジェクト（2008年6月～2009年6月/1年1ヶ月）
 
 ##### 1.5.4.4.1. 担当業務: 運用支援、及びシステム開発（基本設計～製造）
+
+- 役割: メンバー
+- プロジェクト規模: 要員20名
+- フェーズ: 運用
 
 - 生命保険会社様システムの運用保守を行いました。
 - 運用保守の作業と平行して、汎用機向けの新規プログラムの開発作業を担当し、上流から下流工程の基本的な開発スキルを身に付けました。
