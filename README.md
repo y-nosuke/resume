@@ -171,8 +171,8 @@
   - OS: Mac, Linux
   - 言語: TypeScript（Node.js）, Bash
   - その他:
-    - AWS: EC2, Lambda, ECR, ECS(Fargate), S3, RDS(MySQL/Aurora), ElastiCache(Redis), VPC, CloudFront, Route 53, API Gateway,  
-           CloudWatch, Systems Manager, Secrets Manager, Step Functions, SQS, EventBridge
+    - AWS: EC2, Lambda, ECR, ECS(Fargate), S3, RDS(MySQL/Aurora), ElastiCache(Redis), VPC, CloudFront, Route 53,  
+           API Gateway, CloudWatch, Systems Manager, Secrets Manager, Step Functions, SQS, EventBridge
     - Terraform, Github, Jenkins(Jenkinsfile)
 
 - リリースごとにアプリケーションのバージョン、試験データが違うため、リリースごとに試験環境を分けたいという要望がありました。
@@ -288,9 +288,9 @@
   - DB: PostgreSQL
   - その他:
     - AWS: EC2, ECR, ECS(Fargate), S3, EFS, RDS(MySQL|PostgreSQL/Aurora), ElastiCache(Redis),  
-           AWS Transfer Family, VPC, CloudFront, Route 53, API Gateway, X-Ray, CloudWatch, Systems Manager, CloudTrail, Athena, Kinesis(Kinesis firehose),  
-           Cognito, Secrets Manager, GuardDuty, Certificate Manager, KMS, WAF & Shield, Detective, IAM,  
-           Billing and Cost Management, SNS, SQS, Amazon EventBridge, SES
+           AWS Transfer Family, VPC, CloudFront, Route 53, API Gateway, X-Ray, CloudWatch, Systems Manager,  
+           CloudTrail, Athena, Kinesis(Kinesis firehose), Cognito, Secrets Manager, GuardDuty, Certificate Manager,  
+           KMS, WAF & Shield, Detective, IAM, Billing and Cost Management, SNS, SQS, Amazon EventBridge, SES
     - コード管理
       - GitLab, GitLab REST API, githook
     - 品質管理
