@@ -1,1 +1,3 @@
 *.PDF
+node_modules
+.cache
