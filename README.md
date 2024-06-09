@@ -150,7 +150,6 @@
 - その他
   - nginx, Apache, Tomcat, RabbitMQ, LDAP, BIND, DHCP, Samba（AD）
 
-
 ### 1.4.7. 資格
 
 - 情報処理技術者（情報セキュリティスペシャリスト）（2012/4）
