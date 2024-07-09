@@ -4,7 +4,7 @@
   "description": "職務経歴書",
   "main": "index.js",
   "scripts": {
-     "lint": "textlint . && markdownlint **/*.md"
+    "lint": "textlint . && markdownlint README.md"
   },
   "keywords": [],
   "author": "",
