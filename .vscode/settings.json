@@ -1,0 +1,11 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+  "editor.fontSize": 14,
+  "files.autoSave": "off",
+  "editor.renderWhitespace": "all",
+  "editor.wordWrap": "on"
+}
